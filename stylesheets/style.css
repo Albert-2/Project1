@@ -1,0 +1,419 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  color: black;
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  line-height: 2;
+  -webkit-font-smoothing: antialiased;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+h1,
+h2,
+h3 {
+  line-height: 1.5;
+}
+
+/* utility classes */
+.flx {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.full-wid {
+  width: 100%;
+}
+.flx-wrp {
+  flex-wrap: wrap;
+}
+.btn {
+  background-color: aqua;
+  padding: 0.25em 0.5em;
+  border-radius: 2rem;
+  border: none;
+  font-size: 1.25rem;
+  padding: 0.45em 1em;
+  font-weight: bolder;
+}
+.btn:is(:focus, :hover) {
+  background-color: rgb(229, 229, 229);
+  cursor: pointer;
+  box-shadow: 10px 5px 5px gray;
+  color: white;
+}
+.back-postn {
+  background-position: center;
+  background-size: cover;
+}
+.postn-rltv {
+  position: relative;
+  top: 100%;
+}
+
+.navbaar {
+  position: fixed;
+  z-index: 1;
+  background-color: rgba(228, 220, 220, 0.4);
+}
+.menubar {
+  font-size: 1.5rem;
+  padding: 0;
+}
+
+.navchild {
+  margin: 0 0.5em;
+}
+.navchild a:is(:focus, :hover) {
+  cursor: pointer;
+  color: rgb(71, 71, 71);
+}
+.navchild .active {
+  color: rgb(248, 65, 163);
+  border-bottom: 2px solid;
+  padding-bottom: 0.1em;
+}
+
+.logo {
+  margin: 1rem;
+}
+.main {
+  height: 100%;
+  background-image: url("images/mountain.webp");
+  position: absolute;
+}
+.main .content {
+  text-align: center;
+  min-width: 25%;
+  margin: 450px auto 0;
+}
+.main .content h2 {
+  color: rgb(248, 185, 70);
+  font-size: 3.5rem;
+}
+.main .content h1 {
+  color: rgb(255, 255, 255);
+}
+.main-1 {
+  display: flex;
+  flex-direction: column;
+  color: black;
+}
+.main-1-content {
+  justify-content: space-around;
+  width: 75%;
+  margin: auto;
+  text-align: center;
+  align-content: center;
+  line-height: 1.25;
+}
+.main-1-head {
+  font-size: 2.5rem;
+  margin: 2rem auto;
+}
+.main-1-content .event-img {
+  width: 800px;
+  height: 400px;
+  margin: 1rem auto;
+}
+.events {
+  width: 45%;
+  min-width: 350px;
+  font-size: 1.25rem;
+}
+.event-para {
+  margin: 1rem 0;
+}
+.event-img,
+.main-3-image,
+.image5 {
+  transition: all 0.2s ease-in;
+  margin: 1.5rem 1rem;
+}
+.event-img:hover,
+.main-3-image:hover,
+.facility-child img:hover,
+.image5:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+/* Article - 2 */
+.main-2 {
+  margin: 2rem 0 0;
+  background-image: url("images/trecking-3.jpg");
+  height: 80vh;
+}
+.main-2-content {
+  position: absolute;
+  top: 20%;
+  left: 5%;
+  min-width: 35%;
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 1.2;
+  word-spacing: 2px;
+}
+.main-2-content h1,
+.main-2-content p {
+  color: wheat;
+  margin: 0.5em auto;
+}
+.main-2-content .btn {
+  margin: 1rem 0;
+  font-size: 1.35rem;
+  padding: 0.5em 1.35em;
+  background-color: rgb(183, 189, 189);
+}
+.main-2-content .btn:hover {
+  background-color: rgb(81, 49, 26);
+  box-shadow: none;
+  color: white;
+}
+/* article-3 */
+
+.main-3 {
+  justify-content: center;
+  margin: auto;
+}
+.main-3 .main-3-content {
+  width: 40%;
+  font-size: 1.25rem;
+  line-height: 1.1;
+  text-align: right;
+  margin: 15rem 0;
+}
+.main-3-content p {
+  margin: 1rem 0;
+}
+.img-grid {
+  display: flex;
+  justify-content: center;
+}
+.main-3-images {
+  width: 60%;
+}
+.main-3-image {
+  width: 450px;
+}
+
+/* facility main-4 */
+
+.main-4 {
+  padding: 10em 3.5em;
+}
+.main-4-container {
+  width: 80%;
+  margin: auto;
+  flex-direction: column;
+  line-height: 1.5;
+  box-shadow: 10px 10px 10px 10px rgb(183, 183, 183);
+  padding: 1em;
+}
+.facility-header {
+  text-align: center;
+  width: 60%;
+}
+.facility-header h1 {
+  font-size: 2.5rem;
+}
+.facility-header p {
+  color: rgb(145, 145, 145);
+  font-size: 1.2rem;
+  min-width: 80%;
+  margin: auto;
+}
+.facilities {
+  color: rgb(145, 145, 145);
+}
+.facility-child {
+  text-align: center;
+  margin: 1rem 0;
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+}
+.fac-child-content {
+  margin: 1.25rem 0 0;
+}
+.fac-child-content p {
+  color: rgb(145, 145, 145);
+}
+
+/* main-5 LOGIN */
+
+.main-5 {
+  margin: 3rem 0;
+}
+.log-in-container {
+  width: 90%;
+  margin: 0 5rem;
+  display: flex;
+  justify-content: space-between;
+}
+.log-in-container .image5 {
+  width: 45%;
+}
+.img-container {
+  display: flex;
+}
+.main-5-img2 {
+  position: relative;
+  top: 25%;
+  right: 10%;
+}
+.login-form {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.25rem;
+}
+.login-form > label {
+  color: rgb(135, 135, 135);
+}
+.login-form input {
+  border: 2px solid rgb(186, 185, 185);
+}
+.login-form > .btn {
+  width: 65%;
+  font-size: 1.5rem;
+  padding: 0;
+  margin: 1rem auto;
+}
+
+/* Footers */
+footer {
+  background-color: #334960;
+  position: relative;
+  top: 110%;
+  font-size: 1.25rem;
+  text-align: center;
+  padding: 2.5em;
+}
+footer .foot p {
+  color: white;
+  width: 70%;
+  margin: auto;
+}
+
+@media (max-width: 1100px) {
+  .facilities {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .facility-child {
+    width: 50%;
+    align-items: center;
+    text-align: center;
+    min-width: 70%;
+  }
+  .facility-header p {
+    min-width: 100%;
+    margin: auto;
+  }
+  .log-in-container {
+    margin: 0;
+    width: 100%;
+  }
+}
+
+@media (max-width: 800px) {
+  .navbaar,
+  .menubar,
+  .main-1-content {
+    flex-direction: column;
+  }
+  .navbaar {
+    background-color: transparent;
+    position: absolute;
+  }
+  .events {
+    width: 100%;
+    margin: 1rem;
+  }
+  .main-2-content {
+    top: 2%;
+  }
+  .main-3 .main-3-content {
+    margin: 1rem;
+    width: 75%;
+    text-align: center;
+  }
+  .main-3-images {
+    width: 100%;
+  }
+  .main-3 {
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  footer {
+    padding: 1em;
+  }
+  footer .foot p {
+    width: 100%;
+    margin: 0;
+  }
+}
+@media (max-width: 900px) {
+  .log-in-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .main-5-img2 {
+    position: static;
+  }
+}
+@media (max-width: 600px) {
+  .login-form,
+  .log-in-container .image5 {
+    width: 80%;
+    margin: 1rem 5rem;
+  }
+  .img-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    width: 100%;
+    align-items: center;
+  }
+  .main-4,
+  .main-4-container,
+  .facility-header,
+  .facility-child {
+    width: 100%;
+    margin: 1rem 0;
+    padding: 0;
+    box-shadow: none;
+  }
+}
