@@ -50,7 +50,6 @@ h3 {
 }
 .self {
   width: 100%;
-  border: 2px solid red;
   display: flex;
   justify-content: space-between;
   font-size: 1.5rem;
